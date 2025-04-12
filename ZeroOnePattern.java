@@ -224,6 +224,11 @@ import java.util.*;
 
 
 // ************************ RECTANGLE PATTERN ************************
+// ****
+// ****
+// ****
+// ****
+
 // public class Rectangle{
 //     public static void main(String[] args){
 //         for (int i = 1; i <= 4; i++){
@@ -237,6 +242,11 @@ import java.util.*;
 
 
 // ************************ HOLLOW RECTANGLE PATTERN ************************
+// * * * *
+// *     *
+// *     *
+// * * * *
+
 // public class HollowRectangle{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -258,6 +268,11 @@ import java.util.*;
 
 
 // ************************ HALF PYRAMID PATTERN ************************
+// *
+// **
+// ***
+// ****
+
 // public class HalfPyramid{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -273,6 +288,11 @@ import java.util.*;
 
 
 // ************************ INVERTED PYRAMID PATTERN ************************
+// ****
+// ***
+// **
+// *
+
 // public class InvertedPyramid{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -288,6 +308,12 @@ import java.util.*;
 
 
 // ************************ INVERTED AND ROTATED HALF STAR PATTERN ************************
+
+//    *
+//   **
+//  ***
+// ****
+
 // public class InvertedAndRotatedHalfStar{
 //     public static void main(String[] args){
 //         int n  = 4;
@@ -310,6 +336,12 @@ import java.util.*;
 
 
 // ************************ NUMBER PATTERN ************************
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5 
+
 // public class NumberPattern {
 //     public static void main(String[] args){
 //         int n = 5;
@@ -325,6 +357,12 @@ import java.util.*;
 
 
 // ************************ INVERTED NUMBER PATTERN ************************
+// 1 2 3 4 5 
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+
 // public class InvertedNumberPattern{
 //     public static void main(String[] args){
 //         int n = 5;
@@ -340,6 +378,12 @@ import java.util.*;
 
 
 // ************************ FLOYS TRIANGLE PATTERN ************************
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+
 // public class FloysTriangle{
 //     public static void main(String[] args){
 //         int n = 5;
@@ -357,20 +401,26 @@ import java.util.*;
 
 
 // ************************ ZERO ONE PATTERN ************************
-// public class ZeroOnePattern{
-//     public static void main(String[] args){
-//         int n = 5;
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
 
-//         for (int i = 1; i <= n; i++){
-//             for(int j = 1; j <= i; j++){
-//                 int  sum = i+j;
-//                 if(sum % 2 == 0){
-//                     System.out.print("1");
-//                 }else{
-//                     System.out.print("0");
-//                 }
-//             }
-//             System.out.println();
-//         }
-//     }
-// }
+public class ZeroOnePattern{
+    public static void main(String[] args){
+        int n = 5;
+
+        for (int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                int  sum = i+j;
+                if(sum % 2 == 0){
+                    System.out.print("1");
+                }else{
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
