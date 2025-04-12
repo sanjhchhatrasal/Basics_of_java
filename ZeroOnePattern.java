@@ -1,10 +1,13 @@
+import java.util.*;
+
+// ************************ HELLO WORLD ************************
 // public class FirstClass{
 //     public static void main(String[] args){
 //         System.out.println("Hello World!!");
 //     }
 // }
 
-// 
+// ************************ SUM OF TWO NUMBERS ************************
 // public class SumOfNum{
 //     public static void main (String[] args){
 //         int a = 10;
@@ -14,8 +17,7 @@
 //     }
 // }
 
-import java.util.*;
-
+// ************************ SUM OF TWO NUMBERS BY TAKING INPUT FROM USER ************************
 // public class SumOfNumScanner{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -27,6 +29,7 @@ import java.util.*;
 //     }
 // }
 
+// ************************ AREA OF CIRCLE ************************
 // public class AreaOfCircle {
 //     public static void  main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
@@ -36,6 +39,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ TABLE OF NUMBER ************************
 // public class TableofNum {
 //     public static void main(String[] args) {
 //         // Scanner sc = new Scanner(System.in);
@@ -53,6 +58,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ CALCULATOR ************************
 // public class CalculatorOfNum{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -82,6 +89,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ MONTH DISPLAY ************************
 // public class MonthDisplay{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -129,7 +138,9 @@ import java.util.*;
 //     }
 // }
 
-// public class AnonymousNums{
+
+// ************************ EMPTY FOR LOOP ************************
+// public class EmptyForLoop{
 //     public static void main(String[] args){
 //         for(; ;) {
 //             System.out.println("Apna College");
@@ -138,6 +149,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ EVEN NUMBERS ************************
 // public class evenNums{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -152,6 +165,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ 0 AND 1 PROGRAM ************************
 // public class menuDriven {
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -187,7 +202,7 @@ import java.util.*;
 // }
 
 
-
+// ************************ PRIME NUMBERS ************************
 // public class PrimeNums{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
@@ -208,7 +223,7 @@ import java.util.*;
 // }
 
 
-
+// ************************ RECTANGLE PATTERN ************************
 // public class Rectangle{
 //     public static void main(String[] args){
 //         for (int i = 1; i <= 4; i++){
@@ -220,6 +235,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ HOLLOW RECTANGLE PATTERN ************************
 // public class HollowRectangle{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -239,6 +256,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ HALF PYRAMID PATTERN ************************
 // public class HalfPyramid{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -252,6 +271,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ INVERTED PYRAMID PATTERN ************************
 // public class InvertedPyramid{
 //     public static void main(String[] args){
 //         int n = 4;
@@ -265,6 +286,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ INVERTED AND ROTATED HALF STAR PATTERN ************************
 // public class InvertedAndRotatedHalfStar{
 //     public static void main(String[] args){
 //         int n  = 4;
@@ -286,6 +309,7 @@ import java.util.*;
 // }
 
 
+// ************************ NUMBER PATTERN ************************
 // public class NumberPattern {
 //     public static void main(String[] args){
 //         int n = 5;
@@ -299,6 +323,8 @@ import java.util.*;
 //     }
 // }
 
+
+// ************************ INVERTED NUMBER PATTERN ************************
 // public class InvertedNumberPattern{
 //     public static void main(String[] args){
 //         int n = 5;
@@ -313,6 +339,7 @@ import java.util.*;
 // }
 
 
+// ************************ FLOYS TRIANGLE PATTERN ************************
 // public class FloysTriangle{
 //     public static void main(String[] args){
 //         int n = 5;
@@ -328,20 +355,22 @@ import java.util.*;
 //     }
 // }
 
-public class ZeroOnePattern{
-    public static void main(String[] args){
-        int n = 5;
 
-        for (int i = 1; i <= n; i++){
-            for(int j = 1; j <= i; j++){
-                int  sum = i+j;
-                if(sum % 2 == 0){
-                    System.out.print("1");
-                }else{
-                    System.out.print("0");
-                }
-            }
-            System.out.println();
-        }
-    }
-}
+// ************************ ZERO ONE PATTERN ************************
+// public class ZeroOnePattern{
+//     public static void main(String[] args){
+//         int n = 5;
+
+//         for (int i = 1; i <= n; i++){
+//             for(int j = 1; j <= i; j++){
+//                 int  sum = i+j;
+//                 if(sum % 2 == 0){
+//                     System.out.print("1");
+//                 }else{
+//                     System.out.print("0");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
