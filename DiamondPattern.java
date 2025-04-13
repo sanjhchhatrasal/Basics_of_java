@@ -426,50 +426,180 @@ import java.util.*;
 // }
 
 // ************************ BUTTERFLY PATTERN ************************
+// *      *
+// **    **
+// ***  ***
+// ********
+// ********
+// ***  ***
+// **    **
+// *      *
 
-public class ButterflyPattern{
+// public class ButterflyPattern{
+//     public static void main(String[] args){
+//         int n = 4;
+
+//         // Upper half
+//         for(int i = 1; i <= n; i++){
+//             // 1st part
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*");
+//             }
+
+//             // spaces
+//             int spaces = 2 * (n - i);
+//             for(int j = 1; j <= spaces; j++){
+//                 System.out.print(" ");
+//             }
+
+//             // 2nd part
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();           
+//         } 
+
+//         // Lower half
+
+//         for(int i = n; i >= 1; i--){
+//             // 1st part
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*");
+//             }
+
+//             // spaces
+//             int spaces = 2 * (n - i);
+//             for(int j = 1; j <= spaces; j++){
+//                 System.out.print(" ");
+//             }
+
+//             // 2nd part
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ************************ SOLID RHOMBUS PATTERN ************************
+//     *****
+//    *****
+//   *****
+//  *****
+// *****
+
+// public class SolidRhombusPattern{
+//     public static void main(String[] args){
+//         int n = 5;
+
+//         for(int i = 1; i <= n; i++){
+//             // spaces
+//             for(int j = 1; j <= (n - i); j++){
+//                 System.out.print(" ");
+//             }
+
+//             for(int j = 1; j <= n; j++){
+//                 System.out.print("*");
+//             }
+
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ************************ NUMBER TRIANGLE PATTERN ************************
+//     1 
+//    2 2
+//   3 3 3
+//  4 4 4 4
+// 5 5 5 5 5
+
+// public class NumberTrianglePattern{
+//     public static void main(String[] args){
+//         int n = 5;
+
+//         for(int i = 1; i <= n; i++){
+//             // spaces
+//             for(int j = 1; j <= n-i; j++){
+//                 System.out.print(" ");
+//             }
+
+//             // star print
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print(i + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ************************ PALLINDROMIC PATTERN ************************
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
+
+// public class PallindromePattern{
+//     public static void main(String[] args){
+//         int n = 5;
+
+//         for(int i = 1; i <= n; i++){
+//             // spaces
+//             for(int j = 1; j <= n-i; j++){
+//                 System.out.print(" ");
+//             }
+//             // 1st half
+//             for(int j = i; j >= 1; j--) {
+//                 System.out.print(j);
+//             }
+
+//             // 2nd half
+//             for(int j = 2; j <= i; j++){
+//                 System.out.print(j);
+//             }
+
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ************************ DIAMOND PATTERN ************************
+
+public class DiamondPattern{
     public static void main(String[] args){
-        int n = 4;
+        int n = 5;
 
-        // Upper half
+        // upper half
         for(int i = 1; i <= n; i++){
-            // 1st part
-            for(int j = 1; j <= i; j++){
-                System.out.print("*");
-            }
-
             // spaces
-            int spaces = 2 * (n - i);
-            for(int j = 1; j <= spaces; j++){
+            for(int j = 1; j <= n-i; j++){
                 System.out.print(" ");
             }
 
-            // 2nd part
+            // Star print
             for(int j = 1; j <= i; j++){
-                System.out.print("*");
-            }
-            System.out.println();           
-        } 
-
-        // Lower half
-
-        for(int i = n; i >= 1; i--){
-            // 1st part
-            for(int j = 1; j <= i; j++){
-                System.out.print("*");
+                System.out.print("*" + " ");
             }
 
-            // spaces
-            int spaces = 2 * (n - i);
-            for(int j = 1; j <= spaces; j++){
-                System.out.print(" ");
-            }
-
-            // 2nd part
-            for(int j = 1; j <= i; j++){
-                System.out.print("*");
-            }
             System.out.println();
         }
+
+        // lower half
+        for(int i = n; i >= 1; i--){
+            // spaces
+            for(int j = 1; j <= n-i; j++){
+                System.out.print(" ");
+            }
+
+            // Star print
+            for(int j = 1; j <= i; j++){
+                System.out.print("*" + " ");
+            }
+
+            System.out.println();
+        }
+
     }
 }
