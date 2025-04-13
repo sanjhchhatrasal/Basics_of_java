@@ -407,18 +407,67 @@ import java.util.*;
 // 0 1 0 1
 // 1 0 1 0 1
 
-public class ZeroOnePattern{
-    public static void main(String[] args){
-        int n = 5;
+// public class ZeroOnePattern{
+//     public static void main(String[] args){
+//         int n = 5;
 
-        for (int i = 1; i <= n; i++){
+//         for (int i = 1; i <= n; i++){
+//             for(int j = 1; j <= i; j++){
+//                 int  sum = i+j;
+//                 if(sum % 2 == 0){
+//                     System.out.print("1");
+//                 }else{
+//                     System.out.print("0");
+//                 }
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ************************ BUTTERFLY PATTERN ************************
+
+public class ButterflyPattern{
+    public static void main(String[] args){
+        int n = 4;
+
+        // Upper half
+        for(int i = 1; i <= n; i++){
+            // 1st part
             for(int j = 1; j <= i; j++){
-                int  sum = i+j;
-                if(sum % 2 == 0){
-                    System.out.print("1");
-                }else{
-                    System.out.print("0");
-                }
+                System.out.print("*");
+            }
+
+            // spaces
+            int spaces = 2 * (n - i);
+            for(int j = 1; j <= spaces; j++){
+                System.out.print(" ");
+            }
+
+            // 2nd part
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();           
+        } 
+
+        // Lower half
+
+        for(int i = n; i >= 1; i--){
+            // 1st part
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
+            }
+
+            // spaces
+            int spaces = 2 * (n - i);
+            for(int j = 1; j <= spaces; j++){
+                System.out.print(" ");
+            }
+
+            // 2nd part
+            for(int j = 1; j <= i; j++){
+                System.out.print("*");
             }
             System.out.println();
         }
