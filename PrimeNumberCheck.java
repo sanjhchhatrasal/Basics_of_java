@@ -566,40 +566,109 @@ import java.util.*;
 // }
 
 // ************************ DIAMOND PATTERN ************************
+//     * 
+//    * * 
+//   * * * 
+//  * * * * 
+// * * * * * 
+// * * * * * 
+//  * * * * 
+//   * * * 
+//    * * 
+//     *
 
-public class DiamondPattern{
+// public class DiamondPattern{
+//     public static void main(String[] args){
+//         int n = 5;
+
+//         // upper half
+//         for(int i = 1; i <= n; i++){
+//             // spaces
+//             for(int j = 1; j <= n-i; j++){
+//                 System.out.print(" ");
+//             }
+
+//             // Star print
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*" + " ");
+//             }
+
+//             System.out.println();
+//         }
+
+//         // lower half
+//         for(int i = n; i >= 1; i--){
+//             // spaces
+//             for(int j = 1; j <= n-i; j++){
+//                 System.out.print(" ");
+//             }
+
+//             // Star print
+//             for(int j = 1; j <= i; j++){
+//                 System.out.print("*" + " ");
+//             }
+
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// Make a function to add 2 numbers and return there sum
+
+// public class sumOfTwoNumbers{
+
+//     public static int sumOfNumbers(int a, int b){
+//         int sum = a + b;
+//         return sum;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+
+//         int sum = sumOfNumbers(a, b);
+//         System.out.println("Sum of 2 numbers is: "+ sum);
+//     }
+// }
+
+// Factorial of a number
+
+// public class factorialOfNum{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int num = sc.nextInt();
+
+//         if(num < 0){
+//             System.out.println("Invalid Number");
+//             return;
+//         }
+
+//         int fact = 1;
+//         for(int i = num; i >= 1; i--){
+//             fact = fact * i;
+//         }
+//         System.out.println(fact);
+//     }
+// }
+
+// Check if a number is prime or not
+
+public class PrimeNumberCheck{
     public static void main(String[] args){
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int count = 0;
 
-        // upper half
-        for(int i = 1; i <= n; i++){
-            // spaces
-            for(int j = 1; j <= n-i; j++){
-                System.out.print(" ");
+        for(int i = 1; i <= num; i++){
+            if(num % i == 0){
+                count += 1;
             }
-
-            // Star print
-            for(int j = 1; j <= i; j++){
-                System.out.print("*" + " ");
-            }
-
-            System.out.println();
         }
-
-        // lower half
-        for(int i = n; i >= 1; i--){
-            // spaces
-            for(int j = 1; j <= n-i; j++){
-                System.out.print(" ");
-            }
-
-            // Star print
-            for(int j = 1; j <= i; j++){
-                System.out.print("*" + " ");
-            }
-
-            System.out.println();
+        if (count > 2 ){
+            System.out.println(num + " is not a prime number");
+        } else{
+            System.out.println(num + " is a prime number");
         }
-
     }
 }
