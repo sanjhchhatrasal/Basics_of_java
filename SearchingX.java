@@ -197,7 +197,36 @@ import java.util.*;
 
 // 2D ARRAY
 
-public class TwoDArray{
+// public class TwoDArray{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+
+//         int rows = sc.nextInt();
+//         int cols = sc.nextInt();
+//         int[][] nums = new int[rows][cols];
+
+//         // input
+//         // rows
+//         for(int i = 0; i < rows; i++){
+//             // columns
+//             for(int j = 0; j < cols; j++){
+//                 nums[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         // output
+//         for(int i = 0; i < rows; i++){
+//             for(int j = 0; j < cols; j++){
+//                 System.out.print(nums[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// Searching for an element x in a matrix.
+
+public class SearchingX{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
@@ -205,21 +234,19 @@ public class TwoDArray{
         int cols = sc.nextInt();
         int[][] nums = new int[rows][cols];
 
-        // input
-        // rows
         for(int i = 0; i < rows; i++){
-            // columns
             for(int j = 0; j < cols; j++){
                 nums[i][j] = sc.nextInt();
             }
         }
+        int x = sc.nextInt();
 
-        // output
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
-                System.out.print(nums[i][j] + " ");
+                if(nums[i][j] == x){
+                    System.out.println("X found on: (" + (i  +"," + j) + ")");
+                }
             }
-            System.out.println();
         }
     }
 }
