@@ -226,27 +226,52 @@ import java.util.*;
 
 // Searching for an element x in a matrix.
 
-public class SearchingX{
+// public class SearchingX{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+
+//         int rows = sc.nextInt();
+//         int cols = sc.nextInt();
+//         int[][] nums = new int[rows][cols];
+
+//         for(int i = 0; i < rows; i++){
+//             for(int j = 0; j < cols; j++){
+//                 nums[i][j] = sc.nextInt();
+//             }
+//         }
+//         int x = sc.nextInt();
+
+//         for(int i = 0; i < rows; i++){
+//             for(int j = 0; j < cols; j++){
+//                 if(nums[i][j] == x){
+//                     System.out.println("X found on: (" + (i  +"," + j) + ")");
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// For a given matrix of N x M, print its transpose.
+
+public class transposeOfMatrix{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
         int rows = sc.nextInt();
         int cols = sc.nextInt();
-        int[][] nums = new int[rows][cols];
+        int[][] matrix = new int[rows][cols];
 
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
-                nums[i][j] = sc.nextInt();
+                matrix[i][j] = sc.nextInt();
             }
         }
-        int x = sc.nextInt();
 
-        for(int i = 0; i < rows; i++){
-            for(int j = 0; j < cols; j++){
-                if(nums[i][j] == x){
-                    System.out.println("X found on: (" + (i  +"," + j) + ")");
-                }
+        for(int j = 0; j < cols; j++){
+            for(int i = 0; i < rows; i++){
+                System.out.print(matrix[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
