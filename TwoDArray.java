@@ -167,30 +167,59 @@ import java.util.*;
 // Eg : { 1, 2, 4, 7 } is sorted in ascending order.
 // {3, 4, 6, 2} is not sorted in ascending order.
 
-public class sortedUnsortedArray{
+// public class sortedUnsortedArray{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int size = sc.nextInt();
+//         int nums[] = new int[size];
+
+//         // input
+//         for(int i = 0; i < size; i++){
+//             nums[i] = sc.nextInt();
+//         }
+
+//         boolean isAscending = true;
+
+//         for(int i = 0; i < nums.length-1; i++){
+//             if(nums[i] > nums[i+1]){
+//                 isAscending = false;
+//             }
+//         }
+
+//         if(isAscending){
+//             System.out.println("The array is sorted");
+//         }else{
+//             System.out.println("The array is not sorted");
+//         }
+
+//     }
+// }
+
+// 2D ARRAY
+
+public class TwoDArray{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int nums[] = new int[size];
+
+        int rows = sc.nextInt();
+        int cols = sc.nextInt();
+        int[][] nums = new int[rows][cols];
 
         // input
-        for(int i = 0; i < size; i++){
-            nums[i] = sc.nextInt();
-        }
-
-        boolean isAscending = true;
-
-        for(int i = 0; i < nums.length-1; i++){
-            if(nums[i] > nums[i+1]){
-                isAscending = false;
+        // rows
+        for(int i = 0; i < rows; i++){
+            // columns
+            for(int j = 0; j < cols; j++){
+                nums[i][j] = sc.nextInt();
             }
         }
 
-        if(isAscending){
-            System.out.println("The array is sorted");
-        }else{
-            System.out.println("The array is not sorted");
+        // output
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < cols; j++){
+                System.out.print(nums[i][j] + " ");
+            }
+            System.out.println();
         }
-
     }
 }
