@@ -66,21 +66,37 @@ import java.util.*;
 // }
 
 // Write a program to count the number of 1’s in a binary representation of the number.
-public class CountOnes{
+// public class CountOnes{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+
+//         int count = 0;
+
+//         while (n > 0){
+//             if((n & 1) == 1){
+//                 count += 1;
+
+//             }
+//             n = n >> 1;
+//         }
+//         System.out.println("Number of 1's in binary representation: " + count);
+
+//     }
+// }
+
+// Write a program to toggle a bit a position = “pos” in a number “n”.
+public class ToggleBitPos{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number (n): ");
         int n = sc.nextInt();
 
-        int count = 0;
+        System.out.print("Enter the position you want to toggle: ");
+        int pos = sc.nextInt();
 
-        while (n > 0){
-            if((n & 1) == 1){
-                count += 1;
-
-            }
-            n = n >> 1;
-        }
-        System.out.println("Number of 1's in binary representation: " + count);
-
+        int result = n ^ (1 << pos);
+        System.out.println("Number after toggling the bit: " + result);
     }
 }
