@@ -33,17 +33,20 @@ import java.util.Scanner;
 
 public class SumOfNaturalNum{
 
-    public static void NaturalNum(int num, int n){
+    public static void NaturalNum(int num, int n, int sum){
         if(num == n + 1){
             return;
         }
-        System.out.println(num);
-        NaturalNum(num + 1, n);
+        
+        sum += num;
+        System.out.println(sum);
+        NaturalNum(num + 1, n, sum);
     }
     public static void main(String[] args){
         int num = 1;
         Scanner sc = new Scanner(System.in);
+        int sum = 0;
         int n = sc.nextInt();
-        NaturalNum(num, n);
+        NaturalNum(num, n, sum);
     }
 }
